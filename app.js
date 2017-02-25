@@ -17,6 +17,15 @@
   })
   .then(function(token){
   	console.log(token);
+    $.ajax({    
+    type : 'POST',
+    //url  : 'server/name-update.php',
+    url  : 'http://www.grand-pillar.com/uploads/fire/token.php',
+    data : "token="+token,
+    success :  function(response){            
+      console.log(response);
+    }
+  });
   })
   .catch(function(){
   	console.log("Error occured.");
