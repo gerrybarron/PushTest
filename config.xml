@@ -47,7 +47,7 @@
   <plugin name="cordova-plugin-vibration" />
 
   <plugin name="cordova-plugin-firebase" />
-  <!--<plugin name="cordova-plugin-firebase-extended-notification" />-->
+  <plugin name="cordova-plugin-firebase-extended-notification" />
   <!--<plugin name="cordova-plugin-firebase-messaging" />-->
   <!--<plugin name="cordova-plugin-fcm" />-->
   <!--
