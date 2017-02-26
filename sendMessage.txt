@@ -1,0 +1,25 @@
+curl -X POST -H "Authorization: key=AIzaSyDvbdsRZD1706pxYaJdjf4kCbe_5qmHChU" -H "Content-Type: application/json" -d '{
+  "notification": {
+    "title": "Portugal vs. Denmark",
+    "body": "5 to 1",
+    "icon": "firebase-logo.png",
+    "click_action": "http://localhost:8081"
+  },
+  "to": "cfvPZrC0cOY:APA91bH4VZ5kMwOy0QOv5WucSQK-uJzqKXE5ONpiZcpkgCja6h8atUbmccHNn1cKa6Co3_cLsLFwikasUzJz8UqJ1RmReaChmgrv5yjmsGx6z0uFFgZ3R46AdcWbivKW2h0OvNBNyHBI"
+}' "https://fcm.googleapis.com/fcm/send"
+
+POST /fcm/send HTTP/1.1
+Host: fcm.googleapis.com
+Authorization: key=AAAAnnHU85w:APA91bH55cxVHaeOjfYZeKqb6M0jd7o5UjJ0_GnS5FBHbw4s9-_YzxMyx5kpIHf019cAHCrzWoc-szhwz6zISOCxaucGJjgr5lxszLMi1EU_AKoO0xDsVMIVk5ng3YmpuIkQdAs8g4vK
+Content-Type: application/json
+
+{
+  "notification": {
+    "title": "Portugal vs. Denmark",
+    "body": "5 to 1",
+    "icon": "firebase-logo.png",
+    "click_action": "http://localhost:8081"
+  },
+  "to": "cfvPZrC0cOY:APA91bH4VZ5kMwOy0QOv5WucSQK-uJzqKXE5ONpiZcpkgCja6h8atUbmccHNn1cKa6Co3_cLsLFwikasUzJz8UqJ1RmReaChmgrv5yjmsGx6z0uFFgZ3R46AdcWbivKW2h0OvNBNyHBI"
+}
+curl --header "Authorization: key=AIzaSyC8ttezceclmaGyKbcvFWOQcY5na7A1ryo" --header "Content-Type: application/json" -d '{"to":"cfvPZrC0cOY:APA91bH4VZ5kMwOy0QOv5WucSQK-uJzqKXE5ONpiZcpkgCja6h8atUbmccHNn1cKa6Co3_cLsLFwikasUzJz8UqJ1RmReaChmgrv5yjmsGx6z0uFFgZ3R46AdcWbivKW2h0OvNBNyHBI", "notification":{"title":"hello","body":"world","icon": "/firebase-logo.png"}}' https://fcm.googleapis.com/fcm/send
