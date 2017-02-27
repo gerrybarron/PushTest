@@ -45,11 +45,16 @@
   <plugin name="cordova-plugin-network-information" />
   <plugin name="cordova-plugin-splashscreen" />
   <plugin name="cordova-plugin-vibration" />
-
+  <!--Firebase plugins-->
   <plugin name="cordova-plugin-firebase" />
-  <!--<plugin name="cordova-plugin-firebase-extended-notification" />-->
   <plugin name="cordova-plugin-firebase-messaging" />
+  <!--<plugin name="cordova-plugin-firebase-extended-notification" />-->
   <!--<plugin name="cordova-plugin-fcm" />-->
+  <framework src="com.google.android.gsm:play-services-auth:9.2.0" />
+  <framework src="com.google.android.gsm:play-services-identity:9.2.0" />
+  <framework src="com.google.android.gsm:play-services-base:9.2.0" />
+  <framework src="com.google.android.gsm:play-services-gcm:9.2.0" />
+
   <!--
     This allows your app to load assets from all *.phongap.com domains
   -->
@@ -60,6 +65,7 @@
     <icon src="res/icon/android/xxhdpi.png" qualifier="xxhdpi" />
     <icon src="res/icon/android/xxxhdpi.png" qualifier="xxxhdpi" />
   </platform>
+
 
   <!--access origin="*" subdomains="true" /-->
   <access origin="*"/>
